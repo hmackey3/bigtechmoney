@@ -1,0 +1,9 @@
+{
+  "functions": [
+    {
+      "name": "send-notifications",
+      "schedule": "0 7 * * *",
+      "timezone": "UTC"
+    }
+  ]
+}
