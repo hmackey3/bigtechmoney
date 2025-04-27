@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import Logo from "../assets/bigtechmoney logo.webp";
 import {
   ArrowRight,
   Check,
@@ -114,12 +115,13 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm border-b border-gray-200 z-50">
         <div className="section-container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-          <Link
+          <img src={Logo} alt="" className="h-16" />
+          {/* <Link
             className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent"
             to="/"
           >
             BigTechMoney
-          </Link>
+          </Link> */}
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -416,27 +418,32 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* 120-Day Accelerator */}
             <Card
               className="animate-fade-up"
               style={{ animationDelay: "0.1s" }}
             >
               <CardContent className="p-6">
                 <div className="text-center">
-                  <h3 className="text-lg font-semibold mb-2">Monthly</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    BigTechMoney 120-Day Accelerator
+                  </h3>
                   <div className="mb-4">
                     <span className="text-4xl font-bold">$249</span>
                     <span className="text-gray-500">/month</span>
                   </div>
                   <p className="text-gray-600 mb-6">
-                    Perfect for those just starting their tech career journey.
+                    The fastest track to your first or next tech sales role.
                   </p>
                 </div>
                 <ul className="space-y-3 mb-6">
                   {[
-                    "Resume analysis",
-                    "Basic interview prep",
-                    "Job search guidance",
-                    "Email support",
+                    "120-Day Elite Coaching Plan: Resume, LinkedIn, Tech Fluency, STAR Mastery",
+                    "Full Resume Rewrite using BigTechMoney competitive templates",
+                    "LinkedIn Optimization for inbound recruiter attention",
+                    "Weekly 1:1 Mock Interviews with Challenger + MEDDIC drills",
+                    "Strategic Job Matchboard: AI matches roles to your skill growth each week",
+                    "Cloud, AI, CRM, Cybersecurity tech fluency synced to your calendar",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start">
                       <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
@@ -450,6 +457,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
+            {/* Alumni Growth Club */}
             <Card
               className="relative border-blue-600 shadow-lg animate-fade-up"
               style={{ animationDelay: "0.2s" }}
@@ -459,27 +467,26 @@ const Index = () => {
               </div>
               <CardContent className="p-6">
                 <div className="text-center">
-                  {/* <h3 className="text-lg font-semibold mb-2">Pro</h3> */}
+                  <h3 className="text-lg font-semibold mb-2">
+                    BigTechMoney Alumni Growth Club
+                  </h3>
                   <div className="mb-4">
-                    <span className="text-4xl font-bold">
-                      $99{" "}
-                      <span className="text-xs text-gray-300">
-                        (After 4 months of $249)
-                      </span>
-                    </span>
+                    <span className="text-4xl font-bold">$99</span>
                     <span className="text-gray-500">/month</span>
                   </div>
                   <p className="text-gray-600 mb-6">
-                    For serious candidates targeting top tech companies.
+                    Stay sharp, stay ready – keep learning and leveling up.
                   </p>
                 </div>
                 <ul className="space-y-3 mb-6">
                   {[
-                    "Everything in Basic",
-                    "Advanced interview simulations",
-                    "System design practice",
-                    "Personal roadmap",
-                    "Priority support",
+                    "Monthly New Masterclasses (Advanced Deal Strategy, RevOps, SaaS Metrics)",
+                    "Unlimited STAR Story Reviews and Role-Specific Interview Practice",
+                    "Quarterly Resume + LinkedIn Refresh Support",
+                    "Early Access to Alumni-Only Job Opportunities (hand-vetted)",
+                    "Access to New Tech Fluency Modules (AI Copilot, Sales Automation, etc.)",
+                    "Private Alumni Networking + Warm Intro Circles",
+                    "Discounted 1:1 Coaching Sessions ($80 instead of $150/session)",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start">
                       <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
@@ -493,28 +500,34 @@ const Index = () => {
               </CardContent>
             </Card>
 
+            {/* Annual Elite Access */}
             <Card
               className="animate-fade-up"
               style={{ animationDelay: "0.3s" }}
             >
               <CardContent className="p-6">
                 <div className="text-center">
-                  <h3 className="text-lg font-semibold mb-2">Yearly</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    BigTechMoney Annual Elite Access
+                  </h3>
                   <div className="mb-4">
                     <span className="text-4xl font-bold">$1249</span>
                     <span className="text-gray-500">/year</span>
                   </div>
                   <p className="text-gray-600 mb-6">
-                    Complete preparation with personalized coaching.
+                    Full access, full freedom. Your career rocket fuel for an
+                    entire year.
                   </p>
                 </div>
                 <ul className="space-y-3 mb-6">
                   {[
-                    "Everything in Pro",
-                    "1-on-1 mentorship",
-                    "Mock interviews with experts",
-                    "Career strategy sessions",
-                    "Lifetime access to resources",
+                    "Everything in the 120-Day Plan plus full flexibility to move at your own pace",
+                    "Resume and LinkedIn Refreshes Anytime (up to 4x/year)",
+                    "Lifetime Access to All Tech Fluency Expansions and Sales Methodologies",
+                    "Bonus Certifications Support Track (Cloud, Cyber, CRM optional cert paths)",
+                    "Unlimited Mock Interviews + Live Deal Coaching Rooms",
+                    "Full Unlock of the Strategic Company Analysis Simulator",
+                    "Exclusive Invite to Founder's Cohort: Partner-Level Career Strategy Group",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start">
                       <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
@@ -553,7 +566,7 @@ const Index = () => {
                 {
                   question: "Can I get a refund if I'm not satisfied?",
                   answer:
-                    "Yes! We offer a 30-day money-back guarantee. If you're not satisfied with our service, we'll provide a full refund, no questions asked.",
+                    "There is no refund but there also is no contract, so if you are not satisfied after month 1, you can discontinue the program",
                 },
                 {
                   question: "How long does it take to see results?",

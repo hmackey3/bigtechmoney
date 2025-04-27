@@ -68,14 +68,14 @@ serve(async (req) => {
                     lookup_keys: ['monthly_discounted'],
                     limit: 1,
                 });
-                priceId = prices.data[0]?.id;
+                priceId = prices[0]?.id;
                 planName = "Monthly Plan (Discounted)";
             } else {
                 const { data: prices } = await stripe.prices.list({
                     lookup_keys: ['monthly_full'],
                     limit: 1,
                 });
-                priceId = prices.data[0]?.id;
+                priceId = prices[0]?.id;
                 planName = "Monthly Plan";
             }
         } else if (newPlanId === 'yearly') {
@@ -83,7 +83,7 @@ serve(async (req) => {
                 lookup_keys: ['yearly'],
                 limit: 1,
             });
-            priceId = prices.data[0]?.id;
+            priceId = prices[0]?.id;
             planName = "Yearly Plan";
         }
 
