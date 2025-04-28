@@ -33,6 +33,7 @@ import {
   DrawerContent,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import Hero from "../assets/hero.jpg";
 
 const Index = () => {
   const [activeAccordion, setActiveAccordion] = React.useState<string | null>(
@@ -210,7 +211,7 @@ const Index = () => {
           <div className="mt-12 bg-gradient-to-r from-gray-100 to-gray-200 p-1 rounded-xl">
             <div className="bg-white border border-gray-200 rounded-lg shadow-xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=1200"
+                src={Hero}
                 alt="AI Career Coaching Platform"
                 className="w-full h-auto object-cover"
               />
