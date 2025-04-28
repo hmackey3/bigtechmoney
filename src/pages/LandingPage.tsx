@@ -427,11 +427,11 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="text-center">
                   <h3 className="text-lg font-semibold mb-2">
-                    BigTechMoney 120-Day Accelerator
+                    BigTechMoney Premium 120-Day Accelerator
                   </h3>
                   <div className="mb-4">
                     <span className="text-4xl font-bold">$249</span>
-                    <span className="text-gray-500">/month</span>
+                    <span className="text-gray-500">/4-month</span>
                   </div>
                   <p className="text-gray-600 mb-6">
                     The fastest track to your first or next tech sales role.
@@ -483,11 +483,11 @@ const Index = () => {
                   {[
                     "Monthly New Masterclasses (Advanced Deal Strategy, RevOps, SaaS Metrics)",
                     "Unlimited STAR Story Reviews and Role-Specific Interview Practice",
-                    "Quarterly Resume + LinkedIn Refresh Support",
+                    "Continual Resume + LinkedIn Refresh Support",
                     "Early Access to Alumni-Only Job Opportunities (hand-vetted)",
                     "Access to New Tech Fluency Modules (AI Copilot, Sales Automation, etc.)",
                     "Private Alumni Networking + Warm Intro Circles",
-                    "Discounted 1:1 Coaching Sessions ($80 instead of $150/session)",
+                    "Discounted 1:1 Coaching Sessions ($99 access instead of $250/session)",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start">
                       <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
@@ -496,7 +496,7 @@ const Index = () => {
                   ))}
                 </ul>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                  Get Started
+                  Contact Us
                 </Button>
               </CardContent>
             </Card>
@@ -523,7 +523,7 @@ const Index = () => {
                 <ul className="space-y-3 mb-6">
                   {[
                     "Everything in the 120-Day Plan plus full flexibility to move at your own pace",
-                    "Resume and LinkedIn Refreshes Anytime (up to 4x/year)",
+                    "Resume and LinkedIn Refreshes Anytime (Unlimited)",
                     "Lifetime Access to All Tech Fluency Expansions and Sales Methodologies",
                     "Bonus Certifications Support Track (Cloud, Cyber, CRM optional cert paths)",
                     "Unlimited Mock Interviews + Live Deal Coaching Rooms",
