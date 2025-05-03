@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/bigtechmoney logo.webp";
 import {
   ArrowRight,
@@ -40,6 +40,7 @@ const Index = () => {
     null
   );
   const isMobile = useIsMobile();
+  const navigate = useNavigate();
 
   const toggleAccordion = (value: string) => {
     setActiveAccordion(activeAccordion === value ? null : value);
@@ -452,7 +453,10 @@ const Index = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button
+                  onClick={() => navigate("/auth")}
+                  className="w-full bg-blue-600 hover:bg-blue-700"
+                >
                   Get Started
                 </Button>
               </CardContent>
@@ -495,7 +499,10 @@ const Index = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button
+                  onClick={() => navigate("/auth")}
+                  className="w-full bg-blue-600 hover:bg-blue-700"
+                >
                   Contact Us
                 </Button>
               </CardContent>
@@ -536,7 +543,10 @@ const Index = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button
+                  onClick={() => navigate("/auth")}
+                  className="w-full bg-blue-600 hover:bg-blue-700"
+                >
                   Get Started
                 </Button>
               </CardContent>
